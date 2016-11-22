@@ -1,0 +1,18 @@
+
+
+#top{border-radius:5px;}
+.row{margin:60px 5px 0 5px;}
+#detail p,#proj p{text-indent: 2em;}
+#myinfo,.view{text-align: center;padding-top: 30px;}
+#myinfo img{margin-bottom: 10px;}
+.foot{background: #ccc}
+.timer{margin-left: 25%;}
+ #plan{width: 90%;margin:0 0 40px 0;color: #FFF}
+ #plan li{list-style-type: none;width: 25%;margin:2%;background: #424242;text-align: center;display: inline-block;padding: 0;}
+ #plan li.active{background: #fa3903;color: black;}
+ #text li{list-style-type: none;display: inline-block;margin-right: 20px;color: red;}
+ #job, #proj{height: 428px;}
+ #aner{height: 520px;padding-top: 50px;}
+/*清除浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom:1;}

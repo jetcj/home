@@ -1,0 +1,15 @@
+/*css document*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+	margin:0;padding:0; 
+}
+body{background: #f5f7f9;font-size: 14px;font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;color: #756f71}
+li{list-style-type: none;border: none;}
+img{border: none;}
+input,select,textarea{outline: none;border: none;background-color: none;}
+textarea{resize: none;}
+a{text-decoration: none;color: #656565;}
+
+/*清除浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom:1;}
+

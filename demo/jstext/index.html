@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片轮播</title>
+	<style type="text/css">
+	  *{margin: 0;
+      padding: 0;}
+	  #content{width: 600px;
+      height: 400px;
+      margin: 0 auto;}
+	  img{width:100%;
+      height: 100% ;
+      padding-bottom: 10px;}
+	  ul li{float: left;
+      border: 1px solid orange;
+      width:118px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      list-style-type: none;}
+    .on{background: orange;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function () {
+			var Oimg=document.getElementsByTagName('img')[0];
+			var Oli=document.getElementsByTagName('li');
+			var count=1;
+			var index=0;
+		function changepic(){
+			count++;
+			if (count>5) {count=1}
+		    Oimg.src='img/'+count+'.jpg';
+		    changeli();
+		    }
+    function changeli(){
+            for (var i = 0; i < Oli.length; i++) {
+            	Oli[i].className="";
+            }
+            Oli[count-1].className="on";
+    }
+      //改变列表样式函数；
+    var timer=setInterval(changepic,1000);
+    Oimg.onmouseover=function(){
+    	clearInterval(timer);
+    }//鼠标移入停止播放事件；
+    Oimg.onmouseout=function(){
+    	timer=setInterval(changepic,1000);
+    }//鼠标移出继续播放事件；
+     for (var i = 0; i <Oli.length; i++) {
+    	Oli[i].index=i;
+        Oli[i].onmouseover=function(){
+        	clearInterval(timer);
+            count=this.index;
+            this.style.background='orange';
+            changepic();
+        }
+        Oli[i].onmouseout=function(){
+        	clearInterval(timer);
+        	this.style.background='';
+            count=this.index;
+        	timer=setInterval(changepic,1000);
+        }
+      }
+    }
+	</script>
+</head>
+<body>
+  <div id="content">
+  	<img src="img/1.jpg" alt="">
+  	<ul>
+  		<li class="on">1</li>
+  		<li>2</li>
+  		<li>3</li>
+  		<li>4</li>
+  		<li>5</li>
+  	</ul>
+  </div>
+</body>
+</html>

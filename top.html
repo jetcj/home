@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>简历首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main/style.css">
+  </head>
+  <body>
+   <!-- 导航开始 -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" id="top">
+       <div class="container">
+         <div class="navbar-header">
+           <a href="#" class="navbar-brand">陈静的简历</a>
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>   
+           </button>
+         </div>
+         <div class="collapse navbar-collapse" id="navbar-collapse">
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="ds/index.html" target="_blank">电商网站案例</a></li>
+             <li><a href="demo/demo.html" target="_blank">demo</a></li>
+             <li><a href="ds/pro.html" target="_blank">性能优化</a></li>
+           </ul>
+         </div>
+       </div>
+    </nav>
+    <!-- 导航结束 -->
+    <!-- 简历正文开始 -->
+    <div class="row">
+      <div class="col-md-2">
+        <div class="panel panel-info"><!-- 基本资料开始 -->
+          <div class="panel-heading">
+            <h3 class="panel-title">基本资料</h3>
+          </div>
+          <div class="panel-body" id="myinfo">
+            <img src="main/image/1.png" class="img-thumbnail">
+            <p><span class="glyphicon glyphicon-user"></span>陈静</p>
+            <p><span class="glyphicon glyphicon-home"></span>广东省阳江市</p>
+            <p><span class="glyphicon glyphicon-flag"></span>大学本科学历</p>
+            <p><span class="glyphicon glyphicon-earphone"></span>18588743872</p>
+          </div>
+        </div><!-- 基本资料结束 -->
+        <div class="panel panel-info"><!-- 技能开始 -->
+          <div class="panel-heading">
+            <h3 class="panel-title">掌握技能</h3>
+          </div>
+          <div class="panel-body" id="aner">
+            <h6>HTML/HTML5/CSS</h6>
+            <div class="progress">
+              <div class="progress-bar" style="width:90%"></div>
+            </div>
+            <h6>js/jquery</h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width: 75%"></div>
+            </div>
+            <h6>Bootsrap</h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width: 65%"></div>
+            </div>
+            <h6>ajax/json/node.js</h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" style="width: 55%"></div>
+            </div>
+            <h6>PHP/数据库</h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+            </div>
+          </div>
+        </div><!-- 技能结束 -->
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">本站介绍</h3>
+          </div>
+          <div class="panel-body"  id="job">
+            <ul class="nav nav-tabs" role="tablist"><!-- 标签栏-->
+              <li class="active"><a href="#detail" role="tab" data-toggle="tab">关于本站</a></li>
+              <li><a href="#info" role="tab" data-toggle="tab">工作经历</a></li>
+            </ul>
+            <div class="tab-content"><!-- 标签内容 -->
+              <div class="tab-pane active" id="detail">
+                <h3>关于本站</h3>
+                <p>本网站运用这段时间来学习的知识做出的页面，展示了个人的学习情况。网站由简历首页、实战项目、网站性能优化三个大模块组成。
+                </p>
+                <p>其中简历首页运用了Bootstrap框架。首页右侧的时钟是用了H5的canvas画布结合js实现。右下方的月历的效果是用js实现的。</p>
+                <p>实战项目模块是花功夫最多的，在做项目之前有2个小包括2个项目，一个是运用HTML和CSS搭建的一个静态的电商页面，一个是结合js,Ajax,jquery等知识点写的几个小demo。</p>
+                <p>性能优化页面包括2部分内容，一是平时自己学习积累的一些优化技巧，二是用HTML5视频标签做的几个关于网站性能优化的教学视频。</p>
+                <p><strong>由于没有过多的考虑兼容性，建议在IE8以上或谷歌，火狐等标准浏览器查看。</strong></p>
+              </div>
+              <div class="tab-pane" id="info">
+                 <!-- <img src="main/image/small/1_01.png">
+                 <img src="main/image/small/2_01.png">
+                 <img src="main/image/small/4_03.png">
+                 <img src="main/image/small/5_05.png"> -->
+                 <table class="table">
+                    <h4>基本简历表</h4>
+                    <thead>
+                      <tr>
+                        <th>职位</th>
+                        <th>公司</th>
+                        <th>任职时间</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>实习网络工程师兼项目助理</td>
+                        <td>广州阳光耐特电子有限公司</td>
+                        <td>2014年1月--2014年7月</td>
+                      </tr>
+                      <tr>
+                        <td>项目助理</td>
+                        <td>广州阳光耐特电子有限公司</td>
+                        <td>2014年7月--2015年8月</td>
+                      </tr>
+                      <tr>
+                        <td>项目经理</td>
+                        <td>盈世信息科技（北京）有限公司</td>
+                        <td>2015年8月--2016年8月</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 <button><a href="ds/look.html">查看详细简历</a></button>
+              </div>
+            </div><!-- 标签内容结束 -->
+          </div>
+        </div><!-- 关于本站结束 -->
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">实战项目</h3>
+          </div>
+          <div class="panel-body" id="proj">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#ds" role="tab" data-toggle="tab">电商网站案例</a></li>
+              <li><a href="#dem" role="tab" data-toggle="tab">Demo案例</a></li>
+              <li><a href="#home" role="tab" data-toggle="tab">简历首页</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="ds">
+                <h4>电商网站</h4>
+                <p>知识点：</p>
+                <button>演示</button>
+              </div>
+              <div class="tab-pane" id="dem">
+                <h4>Demo</h4>
+                <p>知识点：</p>
+                <button>演示</button>
+              </div>
+              <div class="tab-pane" id="home">
+                <h4>简历首页</h4>
+                <p>知识点：</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- 实战结束 -->
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">时钟</h3>
+          </div>
+          <div class="panel-body">
+            <div class="timer"><!-- 时钟 -->
+              <canvas id="clock" width="200" height="200"></canvas>
+            </div>
+          </div><!-- panel-body结束 -->
+        </div><!-- 时钟结束 -->
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">月历</h3>
+          </div>
+          <div class="panel-body">
+            <div id="plan">
+              <ul>
+                <li>
+                  <h3>1</h3><p>JAN</p>
+                </li>
+                <li>
+                  <h3>2</h3><p>FER</p>
+                </li>
+                <li>
+                  <h3>3</h3><p>MAR</p>
+                </li>
+                <li>
+                  <h3>4</h3><p>APR</p>
+                </li>
+                <li>
+                  <h3>5</h3><p>MAY</p>
+                </li>
+                <li>
+                  <h3>6</h3><p>JUN</p>
+                </li>
+                <li>
+                  <h3>7</h3><p>JUL</p>
+                </li>
+                <li>
+                  <h3>8</h3><p>AUG</p>
+                </li>
+                <li>
+                  <h3>9</h3><p>SEP</p>
+                </li>
+                <li>
+                  <h3>10</h3><p>OCT</p>
+                </li>
+                <li>
+                  <h3>11</h3><p>NOV</p>
+                </li>
+                <li>
+                  <h3>12</h3><p>DEC</p>
+                </li>
+              </ul>
+            </div><!-- plan结束 -->
+            <div class="container">
+               <ul id="text">
+                 <li><img src="main/image/monkey.jpg"></li>
+                 <li id="list"></li>
+               </ul>
+            </div>
+          </div><!-- panel-body结束 -->
+        </div><!-- 月历结束 -->
+      </div><!-- col-md-4结束 -->
+    </div><!-- 简历正文row结束 -->
+    <hr>
+    <footer><!-- 页脚开始 -->
+     <div class="container">
+      <div class="view">
+        <a href="#"><img src="main/image/chrome-logo-small.jpg"></a>
+        <a href="#"><img src="main/image/firefox-logo-small.jpg"></a>
+        <a href="#"><img src="main/image/safari-logo-small.jpg"></a>
+        <p>本站的最终解释权归陈静所有 &copy;2016.11</p>
+      </div>
+      <p class="pull-right"><a href="#top">回到顶部</a></p>
+     </div>
+    </footer>
+    <script src="js/jquery.1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main/show.js"></script>
+  </body>
+</html>

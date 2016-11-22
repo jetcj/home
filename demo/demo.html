@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo实例</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+      .top{width: 100%;height: 20px;background:#719cf3;border-radius: 2px;}
+      /*正文*/
+	  .contain{width: 1000px;margin:0 auto;}
+	  .main{margin-top: 10px;}
+	  p{text-indent: 2em;line-height: 2em}
+	  /*正文左边样式*/
+	  .main-left{width: 300px;float: left;background: #FFF;position: fixed;}
+	  .chapter-top{height: 100px;background: #222;line-height: 100px;margin: 30px 20px 0 20px;text-align: center;color: #FFF}
+	  .chapter{height:120px;text-align: center;border-bottom: 20px solid #f5f7f9;margin-top:30px; }
+	  .chapter a{color: orange;}
+	  .nav{height:150px;margin-top:20px;text-align: center;}
+      /*正文右边样式*/
+	  .main-right{width: 650px;float: right;background: #FFF;}
+	  .right{width:600px;margin:0 auto;}
+	  .right-top{margin: 40px;text-align: center;}
+	  .one,.second,.three{margin:10px 0;}
+	  a{display:inline-block;padding: 10px;}
+	  a:hover{background: #e9866a;color: red;}
+	  .main-right a{width:40px;background: #CCC;border: 1px solid #FFF;border-radius: 7px;text-align: center;}
+	  /*底部*/
+	  .container{width: 100%;text-align: center;margin: 80px 0 10px 0;}
+      .container a:hover{background: none;}
+	</style>
+</head>
+<body>
+  <div class="top"></div>
+  <div class="contain clearfix">
+    <div class="main">
+	    <div class="main-left">
+	      <div class="chapter-top">
+	      	<h3>Demo 案例</h3>
+	      </div>
+	      <div class="chapter">
+	      	<a href="#">首页</a>
+	      	<a href="#">关于</a>
+	      </div>
+	      <div class="nav">
+	          <h3>Demo目录<small style="font-weight: normal">(点击下方有惊喜)</small></h3>
+		      <ul>
+		      	<li><a href="#1">1、案例一</a></li>
+		      	<li><a href="#2">2、案例二</a></li>
+		      	<li><a href="#3">3、案例三</a></li>
+		      </ul>
+	      </div>
+	    </div><!-- main-left结束 -->
+	    <div class="main-right">
+	       <div class="right">
+	         <div class="right-top"><h2>案例展示区域</h2></div>
+		     <h3>前言</h3>
+		     <p>本页主要向大家展示了3个Demo。分别为:用内置对象Date倒计时效果，用JavaScript实现图片轮播，用混合方式创建对象并结合Ajax实现</p>
+		     <div class="one"><!-- 倒计时实例 -->
+		     	<h4 id="1">一、用内置对象Date倒计时效果</h4>
+			      <p>需求分析：</p>
+			      <p>1、页面分为倒计时显示区和切换按钮，页面加载完毕倒计时显示空白。2、用户点击改变按钮的状态来确定倒计时的开始和结束。</p>
+				  <h4>代码实现</h4>
+				  <a href="jstext/img/htm1.png" target="first">HTML</a><a href="jstext/img/css1.png" target="first">CSS</a><a href="jstext/img/js1.png" target="first">js</a><a href="jstext/date.html" target="first">效果</a>
+			  	  <iframe src="jstext/date.html" width="600" height="450" name="first"></iframe>
+		      </div><!-- 倒计时实例结束 -->
+		     <div class="second"><!-- 轮播实例 -->
+		      <h4 id="2">二、用JavaScript实习图片轮播</h4>
+		      <p>需求分析：</p>
+		      <p>1、页面分为图片区和导航区，页面加载完毕后图片区每隔1秒自动播放图片。2、自动播放时，导航区的显示跟着图片播放的位置变化。3、鼠标移到图片区停止播放；鼠标移开时，从当前图片开始自动播放。4、鼠标移到导航栏的数字上，页面显示相应的图片并停止自动播放。</p>
+			  <h4>代码实现</h4>
+			  <a href="jstext/img/htm2.png" target="sec">HTML</a><a href="jstext/img/css2.png" target="sec">CSS</a><a href="jstext/img/js2.png" target="sec">js</a><a href="jstext/index.html" target="sec">效果</a>
+		  	  <iframe src="jstext/index.html" width="600" height="450" name="sec"></iframe>
+	         </div><!-- 轮播实例结束 -->
+	         <div class="three"><!-- 倒计时实例 -->
+		     	<h4 id="3">三、用混合方式创建对象并结合Ajax实现</h4>
+			      <p>需求分析：</p>
+			      <p>1、页面分为图片区和导航区，页面加载完毕后图片区每隔1秒自动播放图片。2、自动播放时，导航区的显示跟着图片播放的位置变化。3、鼠标移到图片区停止播放；鼠标移开时，从当前图片开始自动播放。4、鼠标移到导航栏的数字上，页面显示相应的图片并停止自动播放。</p>
+				  <h4>代码实现</h4>
+				  <a href="" target="">HTML</a><a href="" target="">CSS</a><a href="" target="">js</a><a href="" target="">效果</a>
+			  	  <iframe src="" width="600" height="450" name=""></iframe>
+		      </div><!-- 倒计时实例结束 -->
+	       </div><!-- right结束 -->
+	    </div><!-- main-right结束 -->
+	 </div><!-- main结束 -->
+  </div><!-- contain结束 -->
+  <footer><!-- 页脚开始 -->
+     <div class="container">
+      <div class="view">
+        <a href="#"><img src="../main/image/chrome-logo-small.jpg"></a>
+        <a href="#"><img src="../main/image/firefox-logo-small.jpg"></a>
+        <a href="#"><img src="../main/image/safari-logo-small.jpg"></a>
+        <p>本站的最终解释权归陈静所有 &copy;2016.11</p>
+      </div>
+     </div>
+    </footer>
+</body>
+</html>
