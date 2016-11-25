@@ -80,26 +80,13 @@
           </div>
           <div class="panel-body"  id="job">
             <ul class="nav nav-tabs" role="tablist"><!-- 标签栏-->
-              <li class="active"><a href="#detail" role="tab" data-toggle="tab">关于本站</a></li>
-              <li><a href="#info" role="tab" data-toggle="tab">工作经历</a></li>
+              <li class="active"><a href="#info" role="tab" data-toggle="tab">工作经历</a></li>
+              <li><a href="#detail" role="tab" data-toggle="tab">关于本站</a></li>
             </ul>
             <div class="tab-content"><!-- 标签内容 -->
-              <div class="tab-pane active" id="detail">
-                <h3>关于本站</h3>
-                <p>本网站运用这段时间来学习的知识做出的页面，展示了个人的学习情况。网站由简历首页、实战项目、网站性能优化三个大模块组成。
-                </p>
-                <p>其中简历首页运用了Bootstrap框架。首页右侧的时钟是用了H5的canvas画布结合js实现。右下方的月历的效果是用js实现的。</p>
-                <p>实战项目模块是花功夫最多的，在做项目之前有2个小包括2个项目，一个是运用HTML和CSS搭建的一个静态的电商页面，一个是结合js,Ajax,jquery等知识点写的几个小demo。</p>
-                <p>性能优化页面包括2部分内容，一是平时自己学习积累的一些优化技巧，二是用HTML5视频标签做的几个关于网站性能优化的教学视频。</p>
-                <p><strong>由于没有过多的考虑兼容性，建议在IE8以上或谷歌，火狐等标准浏览器查看。</strong></p>
-              </div>
-              <div class="tab-pane" id="info">
-                 <!-- <img src="main/image/small/1_01.png">
-                 <img src="main/image/small/2_01.png">
-                 <img src="main/image/small/4_03.png">
-                 <img src="main/image/small/5_05.png"> -->
+              <div class="tab-pane active" id="info">
                  <table class="table">
-                    <h4>基本简历表</h4>
+                    <h3>基本简历表</h3>
                     <thead>
                       <tr>
                         <th>职位</th>
@@ -125,7 +112,16 @@
                       </tr>
                     </tbody>
                   </table>
-                 <button><a href="ds/look.html">查看详细简历</a></button>
+                 <button class="lookBtn"><a href="ds/look.html">查看详细简历</a></button>
+              </div>
+              <div class="tab-pane" id="detail">
+                <h3>关于本站</h3>
+                <p>本网站运用这段时间来学习的知识做出的页面，展示了个人的学习情况。网站由简历首页、项目案例、网站性能优化三个大模块组成。
+                </p>
+                <p>其中简历首页运用了Bootstrap框架。首页右侧的时钟是用了H5的canvas画布结合js实现。右下方的月历的效果是用js实现的。首页内容包括了关于个人工作简历，本站的介绍，实战时主要用到的知识点。</p>
+                <p>项目案例模块包括2个项目，一个是运用HTML和CSS搭建的一个静态的电商页面，一个是结合js,Ajax,jquery等知识点写的几个小demo。</p>
+                <p>性能优化页面包括2部分内容，一是平时自己学习积累的一些优化技巧，二是用HTML5视频标签加载了两个关于网站性能优化的教学视频。</p>
+                <p><strong>由于没有过多的考虑兼容性，建议在IE8以上或谷歌，火狐等标准浏览器查看。</strong></p>
               </div>
             </div><!-- 标签内容结束 -->
           </div>
@@ -138,18 +134,32 @@
             <ul class="nav nav-tabs" role="tablist">
               <li class="active"><a href="#ds" role="tab" data-toggle="tab">电商网站案例</a></li>
               <li><a href="#dem" role="tab" data-toggle="tab">Demo案例</a></li>
+              <li><a href="#vdo" role="tab" data-toggle="tab">性能优化</a></li>
               <li><a href="#home" role="tab" data-toggle="tab">简历首页</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="ds">
                 <h4>电商网站</h4>
-                <p>知识点：</p>
-                <button>演示</button>
+                <p>主要知识点：</p>
+                <ol>
+                  <li>根据浮动float布局</li>
+                  <li>根据定位position布局</li>
+                  <li>:after方法清除浮动</li>
+                  <li>z-index元素的层级</li>
+                  <li>margin和padding控制元素的间距</li>
+                  <li>背景图片定位</li>
+                </ol>
+                <button class="showBtn"><a href="">演示</a></button>
               </div>
               <div class="tab-pane" id="dem">
                 <h4>Demo</h4>
                 <p>知识点：</p>
-                <button>演示</button>
+                <button class="showBtn"><a href="">演示</a></button>
+              </div>
+              <div class="tab-pane" id="vdo">
+                <h4>性能优化</h4>
+                <p>知识点：</p>
+                <button class="showBtn"><a href="">演示</a></button>
               </div>
               <div class="tab-pane" id="home">
                 <h4>简历首页</h4>
@@ -234,7 +244,7 @@
         <a href="#"><img src="main/image/safari-logo-small.jpg"></a>
         <p>本站的最终解释权归陈静所有 &copy;2016.11</p>
       </div>
-      <p class="pull-right"><a href="#top">回到顶部</a></p>
+      <p class="pull-right"><a href="#">回到顶部</a></p>
      </div>
     </footer>
     <script src="js/jquery.1.10.2.js"></script>

@@ -13,6 +13,9 @@
  #text li{list-style-type: none;display: inline-block;margin-right: 20px;color: red;}
  #job, #proj{height: 428px;}
  #aner{height: 520px;padding-top: 50px;}
+ .table{margin-top: 30px;}
+ .showBtn,.lookBtn{float: right;margin-top: 50px;}
+ .showBtn a:hover,.lookBtn a:hover{color:red;text-decoration: underline;}
 /*清除浮动*/
 .clearfix:after{content: "";display: block;clear: both;}
 .clearfix{zoom:1;}
