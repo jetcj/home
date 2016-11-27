@@ -2,9 +2,95 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>网站性能优化</title>
+	<title>网站优化</title>
+	<style type="text/css">
+	body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,img{
+	margin:0;padding:0; 
+}   
+    body{font-size: 14px;font-family:"宋体";}
+    a{text-decoration: none;}
+    .container{width:1094px;margin:0 auto;}
+    .header{width: 1094px;height: 52px;background:url(images/top.png) left center no-repeat;}
+    .logo{margin-left:50px;height: 52px;line-height: 52px;float: left;font-size: 21px;}
+    ul{list-style-type: none;}
+    .nav li{float: right;height:52px;line-height: 52px;}
+    .nav a{color: #222; padding-right: 10px;}
+    .nav a:hover{color: red}
+    .show{background: url(images/main.png)  no-repeat;width: 1094px;height: 200px;margin-bottom: 25px;color: #FFF;}
+    .main{padding: 30px 0 0 30px;float: left;}
+    .main a{display:inline-block;width: 70px;height:50px;background: #e74f4d;border-radius: 5px;line-height: 50px;margin-right: 20px;text-align: center;padding:0 5px;color: #FFF}
+    .main span{font-weight: bold;}
+    .main p{font-size: 24px;margin-bottom: 70px;font-weight: bold;}
+    .share{float: right;width: 350px;text-align: center;padding-top: 50px;}
+    .share input{width:230px;height:44px;}
+    .share button{margin-top:30px;margin-bottom:36px;width:81px;height:46px;background:#6f7278;color:#fff;border:none;}
+    .wrapper{text-align: center;margin-bottom: 25px}
+    .wrapper li{float: left;margin:0 30px;width: 200px;}
+    .footer{background: #000;height: 50px;border-radius: 5px;text-align: center;line-height: 50px;}
+    /*清除浮动*/
+    .clearfix:after{content: "";display: block;clear: both;}
+    .clearfix{zoom:1;}
+    .item img{width: 505px;margin-top: 30px}
+    h4{color: #e74f4d}
+    .footer p{color: #FFF;}
+	</style>
 </head>
 <body>
-  
+  <div class="container">
+  	<div class="header clearfix">
+  	  <div class="logo"><span>网站优化</span></div>
+  	  <div class="nav">
+  	  	<ul>
+  	  	  <li><a href=""><img src="images/log.png">登录</a></li>
+  	  	  <li><a href="">分享</a></li>
+  	  		<li><a href="">最新活动</a></li>
+  	  		<li><a href="">首页</a></li>
+  	  	</ul>
+  	  </div>
+  	</div>
+    <div class="show">
+      <div class="main">
+        <p>前端性能优化-基础知识认知</p>
+        <a href="http://www.imooc.com/learn/580">学习更多&gt;&gt;</a>
+      </div>
+      <div class="share">
+           <input type="text"><button>搜索</button>
+      </div>
+    </div>
+    <h4>慕课网视频>第一章>1-1课程简介</h4>
+    <hr>
+    <video width="1000" height="480" controls="controls">
+    <source src="images/show.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+    </video>
+    <h4>学习笔记</h4>
+    <hr>
+    <div class="wrapper clearfix">
+        <ul>
+          <li>
+            <img src="images/item1.png">
+            <p>性能优化的基认知</p>
+          </li>
+          <li>
+            <img src="images/item2.png">
+            <p>网络环境</p>
+          </li>
+          <li>
+            <img src="images/item3.png">
+            <p>加载顺序和本地存储</p>
+          </li>
+          <li>
+            <img src="images/item4.png">
+            <p>SDK</p>
+          </li>
+          <div class="item">
+            <img src="images/wra1.jpg">
+            <img src="images/wra2.jpg">
+          </div>
+    </div>
+  </div>
+<div class="footer">
+   <p>本站的最终解释权归陈静所有 &copy;2016.11</p>
+</div>
 </body>
 </html>
